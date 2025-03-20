@@ -17,5 +17,8 @@ function firstNonRepeatingChar(str) {
     return null;
 }
 console.log("Challenge 4");
-console.log(firstNonRepeatingChar("swiss"));
-console.log(firstNonRepeatingChar("racecar"));
+console.log(firstNonRepeatingChar("swiss")); //w
+console.log(firstNonRepeatingChar("racecar")); //e
+console.log(firstNonRepeatingChar("raccar")); //Null
+console.log(firstNonRepeatingChar("mammal")); //l
+console.log(firstNonRepeatingChar("apple")); //a

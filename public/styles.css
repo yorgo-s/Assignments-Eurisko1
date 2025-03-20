@@ -42,7 +42,7 @@ body{
   label{
     display: block;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 1.4em;
     color: #333;
     margin: 16px 0 6px;
   }
@@ -67,7 +67,7 @@ body{
   footer a{
     text-align: center;
     display: block;
-    color: #999;
+    color: #258ced;
     margin-top: 40px;
-    font-size: 0.7em;
+    font-size: 1.2em;
   }

@@ -1,5 +1,6 @@
 function deepEqual(obj1: any, obj2: any): boolean {
   if (obj1 === obj2) return true;
+
   if (
     typeof obj1 !== "object" ||
     obj1 === null ||
