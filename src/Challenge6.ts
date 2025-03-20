@@ -1,3 +1,4 @@
+//lru cache that has a get and put method
 class LRUCache {
   private capacity: number;
   private cache: Map<number, number>;
@@ -7,6 +8,7 @@ class LRUCache {
     this.cache = new Map<number, number>();
   }
 
+  //get method returns the value of the key that was passed in or null if it doesn't exist
   get(key: number): number | null {
     if (!this.cache.has(key)) {
       return null;
@@ -18,6 +20,7 @@ class LRUCache {
     return value;
   }
 
+  //put method adds a key value pair to the cache and removes the least recently used key if the cache is full
   put(key: number, value: number): void {
     if (this.cache.has(key)) {
       // Remove the old entry
@@ -33,7 +36,6 @@ class LRUCache {
   }
 }
 
-// Example usage:
 console.log("Challenge 6");
 const cache = new LRUCache(2);
 cache.put(1, 1);

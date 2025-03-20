@@ -10,10 +10,11 @@ class TaskManager {
   private tasks: Task[] = [];
   private currentId: number = 1;
 
+  // Add a new task with the given name, id with incrementation, and default status "Pending"
   addTask(name: string): void {
     this.tasks.push({ id: this.currentId++, name, status: "Pending" });
   }
-
+  // sets the task to completed and not found if the id doesnt exist
   completeTask(id: number): void {
     const task = this.tasks.find((task) => task.id === id);
     if (task) {
@@ -22,7 +23,7 @@ class TaskManager {
       console.log(`Task with ID ${id} not found.`);
     }
   }
-
+  // displays the tasks with their id, name, and status
   displayTasks(): void {
     this.tasks.forEach((task) => {
       console.log(
@@ -32,7 +33,6 @@ class TaskManager {
   }
 }
 
-// Example usage:
 console.log("Challenge 7");
 const taskManager = new TaskManager();
 taskManager.addTask("Learn TypeScript");

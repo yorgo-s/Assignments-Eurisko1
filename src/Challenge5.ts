@@ -1,3 +1,4 @@
+// checks first if the two objects are the same then checks if they are objects and if they are not null. Checks if the keys are the same and if the values are the same by calling the function recursively.
 function deepEqual(obj1: any, obj2: any): boolean {
   if (obj1 === obj2) return true;
 
@@ -18,5 +19,5 @@ function deepEqual(obj1: any, obj2: any): boolean {
 }
 
 console.log("Challenge 5");
-console.log(deepEqual({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 2 } }));
-console.log(deepEqual({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 3 } }));
+console.log(deepEqual({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 2 } })); //true
+console.log(deepEqual({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 3 } })); //false
